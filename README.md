@@ -1,8 +1,8 @@
 ![TrustOS Logo](assets/TrustOS_white_back.png)
 
-# TrustOS: An Open Framework for Building Trust Through Assurance
+# Welcome!
 
-This repository contains the core modules, patterns, tools, and principles behind TrustOS — a modular, community-driven operating system for modern assurance and control design.
+This repository contains the core modules, patterns, tools, and principles behind TrustOS — a modular, community-driven operating system for modern assurance and control design. This framework is created by assurance practitioners for audit practitioners.
 
 ## Key Modules
 
@@ -21,3 +21,6 @@ We encourage forks, adaptations, and creative reuse of our resources—just give
 > [https://github.com/audit-brands/trustos](https://github.com/audit-brands/trustos)
 
 If you’re building something exciting using TrustOS, we’d love to hear about it!
+
+## Manifesto
+Read the [TrustOS Manifesto](MANIFESTO.md) to understand our philosophy and purpose.
