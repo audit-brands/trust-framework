@@ -1,8 +1,8 @@
+![TrustOS Logo](assets/TrustOS_white_back.png)
+
 # TrustOS: An Open Framework for Building Trust Through Assurance
 
 This repository contains the core modules, patterns, tools, and principles behind TrustOS — a modular, community-driven operating system for modern assurance and control design.
-
-![TrustOS Logo](assets/TrustOS_white_back.png)
 
 ## Key Modules
 
