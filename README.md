@@ -4,12 +4,26 @@
 
 This repository contains the core modules, patterns, tools, and principles behind TrustOS — a modular, community-driven operating system for modern assurance and control design. This framework is created by assurance practitioners for audit practitioners.
 
-## Key Modules
+---
 
-- [Control Maturity 2.0 Model](control_maturity_model.md)
-- [Cybernetic Control Examples](cybernetic_examples.md)
-- [Cybernetic Control Checklist](cybernetic_control_checklist.md)
-- [Control Improvement Worksheet](control_improvement_worksheet.md)
+## 📚 Documentation Index
+
+### 🔹 [MANIFESTO.md](MANIFESTO.md)
+> The philosophical foundation of TrustOS. Why we built it, who it's for, and what we believe about trust and assurance.
+
+### 🔹 [GOVERNANCE.md](GOVERNANCE.md)
+> Our open contribution model, roles (steward, contributors, maintainers), and decision-making process.
+
+### 🔹 [CONTRIBUTING.md](CONTRIBUTING.md)
+> Guidelines for contributing new modules, patterns, translations, and improvements to the project.
+
+### 🔹 [BRAND_USAGE.md](BRAND_USAGE.md)
+> How to use the TrustOS name and logo appropriately. What requires permission and what doesn’t.
+
+### 🔹 [STRUCTURE.md](STRUCTURE.md)
+> The architecture of TrustOS — including Core Principles, Functional Modules, and Practice Patterns. Inspired by systems engineering and open-source modularity.
+
+---
 
 ## Community Use & Attribution
 
@@ -22,5 +36,4 @@ We encourage forks, adaptations, and creative reuse of our resources—just give
 
 If you’re building something exciting using TrustOS, we’d love to hear about it!
 
-## Manifesto
-Read the [TrustOS Manifesto](MANIFESTO.md) to understand our philosophy and purpose.
+**Trust is a system. TrustOS is how we build it.**
