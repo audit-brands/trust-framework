@@ -1,6 +1,8 @@
 # The TrustOS Manifesto
 *Version 1.0 – An Open Framework for Building Trust Through Assurance*
 
+The philosophical foundation of TrustOS. Why we built it, who it's for, and what we believe about trust and assurance.
+
 We believe trust is not a byproduct.  
 It is not earned passively.  
 It must be built, stewarded, challenged, and re-earned—every day, in every system.
@@ -13,6 +15,7 @@ We created **TrustOS** because:
 We’re here to change that.
 
 ---
+
 
 ## We Believe:
 

@@ -2,7 +2,7 @@
 
 **Version 0.1 — Draft for Community Review**
 
-TrustOS is an open framework for building trust through assurance. It is developed and maintained by a growing community of contributors who believe that governance, risk, and control systems should be transparent, adaptive, and stakeholder-focused.
+TrustOS is an open framework for building trust through assurance. It is developed and maintained by a growing community of contributors who believe that governance, risk, and control systems should be transparent, adaptive, and stakeholder-focused. Learn about our open contribution model, roles (steward, contributors, maintainers), and decision-making process.
 
 ## Guiding Principles
 

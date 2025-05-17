@@ -2,30 +2,47 @@
 
 # Welcome!
 
-This repository contains the core modules, patterns, tools, and principles behind TrustOS — a modular, community-driven operating system for modern assurance and control design. This framework is created by assurance practitioners for audit practitioners.
+---
+
+TrustOS is a modular, open-source operating system for building trust through modern assurance. It combines control design, system feedback, and stakeholder outcomes that go beyond compliance. This repository contains the core modules, patterns, tools, and the principles behind TrustOS — a modular, community-driven operating system for modern assurance and control design. This framework is created by assurance practitioners for audit practitioners.
 
 ---
 
-## 📚 Documentation Index
+## 📐 Repository Structure
 
-### 🔹 [MANIFESTO.md](MANIFESTO.md)
-> The philosophical foundation of TrustOS. Why we built it, who it's for, and what we believe about trust and assurance.
-
-### 🔹 [GOVERNANCE.md](GOVERNANCE.md)
-> Our open contribution model, roles (steward, contributors, maintainers), and decision-making process.
-
-### 🔹 [CONTRIBUTING.md](CONTRIBUTING.md)
-> Guidelines for contributing new modules, patterns, translations, and improvements to the project.
-
-### 🔹 [BRAND_USAGE.md](BRAND_USAGE.md)
-> How to use the TrustOS name and logo appropriately. What requires permission and what doesn’t.
-
-### 🔹 [STRUCTURE.md](STRUCTURE.md)
-> The architecture of TrustOS — including Core Principles, Functional Modules, and Practice Patterns. Inspired by systems engineering and open-source modularity.
+| Folder        | Contents |
+|---------------|----------|
+| `/core/`      | Foundational principles including the [Manifesto](core/MANIFESTO.md), [Governance](core/GOVERNANCE.md), [Brand Usage](core/BRAND_USAGE.md), and [Contribution Guidelines](core/CONTRIBUTING.md) |
+| `/modules/`   | Functional assurance modules, starting with [Control Design & Maturity 2.0](modules/control_design_maturity.md) |
+| `/patterns/`  | Practice-based assurance patterns (coming soon) with YAML metadata, audit logic, and KPIs |
+| `/assets/`    | Logos, infographics, and supporting visuals |
+| Root files    | Project [Blueprint](blueprint.md) and [STRUCTURE.md](STRUCTURE.md) overview for contributors |
 
 ---
 
-## Community Use & Attribution
+## 📘 Key References
+
+### 🧭 [MANIFESTO.md](core/MANIFESTO.md)
+> Vision and philosophy for building trust in adaptive systems.
+
+### ⚙️ [control_design_maturity.md](modules/control_design_maturity.md)
+> Control Maturity 2.0, cybernetic controls, improvement checklist and templates.
+
+### 🗺️ [blueprint.md](blueprint.md)
+> The long-term roadmap, three-layer architecture, and design principles of TrustOS.
+
+---
+
+## 🚀 How to Contribute
+
+- Start with [CONTRIBUTING.md](core/CONTRIBUTING.md)
+- Submit new modules or practice patterns
+- Translate resources or share real-world examples
+- Open an issue or pull request to collaborate
+
+---
+
+## 🌱 Attribution & Community Use
 
 **TrustOS** is a community-driven, open framework. The name, logo, and associated visuals may be used freely to refer to the project, provided they are not used in a way that suggests official endorsement, partnership, or certification **without prior permission**.
 

@@ -4,6 +4,8 @@
 
 The TrustOS name, logo, and associated assets are intended to represent the values of transparency, open collaboration, and trust.
 
+How to use the TrustOS name and logo appropriately. What requires permission and what doesn’t.
+
 ## Permitted Uses (No Permission Needed)
 
 - Use the TrustOS name to refer to the open-source project

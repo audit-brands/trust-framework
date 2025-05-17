@@ -2,7 +2,7 @@
 
 **Version 1.0 — Modular, Open, and Community-Driven**
 
-TrustOS is organized into **three core layers**, each inspired by modern systems engineering and open-source software architecture. This modular approach allows users to adopt, extend, or remix TrustOS components based on their specific needs, industry, or maturity level.
+TrustOS is organized into **three core layers**, each inspired by modern systems engineering and open-source software architecture. The architecture of TrustOS — including Core Principles, Functional Modules, and Practice Patterns. This modular approach allows users to adopt, extend, or remix TrustOS components based on their specific needs, industry, or maturity level.
 
 ---
 
