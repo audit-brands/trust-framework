@@ -4,7 +4,7 @@
 
 ---
 
-TrustOS is a modular, open-source operating system for building trust through modern assurance. It combines control design, system feedback, and stakeholder outcomes that go beyond compliance. This repository contains the core modules, patterns, tools, and the principles behind TrustOS — a modular, community-driven operating system for modern assurance and control design. This framework is created by assurance practitioners for audit practitioners.
+TrustOS is a modular, open-source operating system for building trust through modern assurance. It combines control design, system feedback, and stakeholder outcomes that go beyond compliance. This repository contains the core modules, patterns, tools, and the principles behind TrustOS — a community-driven OS for modern assurance and control design. This framework is created by assurance practitioners for audit practitioners.
 
 ---
 
