@@ -13,7 +13,7 @@ TrustOS is a modular, open-source operating system for building trust through mo
 | Folder        | Contents |
 |---------------|----------|
 | `/core/`      | Foundational principles including the [Manifesto](core/MANIFESTO.md), [Governance](core/GOVERNANCE.md), [Brand Usage](core/BRAND_USAGE.md), and [Contribution Guidelines](core/CONTRIBUTING.md) |
-| `/modules/`   | Functional assurance modules, starting with [Control Design & Maturity 2.0](modules/control_design_maturity.md) |
+| `/modules/`   | Functional assurance modules, starting with [Control Design & Maturity 2.0](modules/control_design_maturity/control_design_maturity.md) |
 | `/patterns/`  | Practice-based assurance patterns (coming soon) with YAML metadata, audit logic, and KPIs |
 | `/assets/`    | Logos, infographics, and supporting visuals |
 | Root files    | Project [Blueprint](blueprint.md) and [STRUCTURE.md](STRUCTURE.md) overview for contributors |
