@@ -11,7 +11,7 @@ A comprehensive local file-based issue tracking system implementing the Every.to
 ./setup_new_project.sh /path/to/your/project "Project Name"
 
 # Example
-./setup_new_project.sh /Users/jontiveros/Development/5_star_dashboards "5 Star Dashboards"
+./setup_new_project.sh /Users/username/Development/my_awesome_project "My Awesome Project"
 ```
 
 ### Manual Setup
