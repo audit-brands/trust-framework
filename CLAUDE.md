@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## System Overview
 
-This is the **TrustOS Methodology System v1.0.0** - a complete local development methodology implementing Every.to's AI-driven engineering practices. It provides a local file-based alternative to GitHub Issues while maintaining full privacy and offline capability.
+This repository contains **TrustOS** - an open-source operating system for building trust through modern assurance - and the **TrustOS Methodology System v1.0.0** located in the `TrustOS_Methodology/` subdirectory.
+
+The **TrustOS Methodology System** is a complete local development methodology implementing Every.to's AI-driven engineering practices. It provides a local file-based alternative to GitHub Issues while maintaining full privacy and offline capability.
 
 ## Core Architecture
 
@@ -20,6 +22,9 @@ The system is built around **local file-based issue tracking** with shell script
 
 ### Project Setup
 ```bash
+# Navigate to methodology system
+cd TrustOS_Methodology/
+
 # Deploy to any new project
 ./setup_new_project.sh /path/to/project "Project Name"
 
@@ -32,6 +37,9 @@ The system is built around **local file-based issue tracking** with shell script
 
 ### Issue Management (Primary Workflow)
 ```bash
+# Navigate to methodology system first
+cd TrustOS_Methodology/
+
 # Create comprehensive issues with research
 ./scripts/create-issue.sh "Issue title" "priority" "label1,label2"
 
@@ -60,7 +68,7 @@ The system includes 4 custom commands designed for Claude Code:
 3. **`/dev-workflow`** - Development lifecycle management with Git integration
 4. **`/project-status`** - Comprehensive project reporting and next steps
 
-See `docs/local_custom_commands.md` for complete command definitions.
+See `TrustOS_Methodology/docs/local_custom_commands.md` for complete command definitions.
 
 ## Development Workflow
 
@@ -80,17 +88,22 @@ See `docs/local_custom_commands.md` for complete command definitions.
 ## File Structure
 
 ```
-TrustOS_Methodology/
-├── scripts/                  # Core management scripts
-│   ├── init-issues.sh        # Initialize system
-│   ├── create-issue.sh       # Create new issues
-│   ├── list-issues.sh        # List/filter issues
-│   ├── move-issue.sh         # Change issue states
-│   ├── search-issues.sh      # Search functionality
-│   └── version.sh            # System information
-├── docs/                     # Complete documentation
-├── setup_new_project.sh      # Deploy to new projects
-└── issues/                   # Issue files (created after init)
+TrustOS/                      # Root repository
+├── TrustOS_Methodology/      # Development methodology system
+│   ├── scripts/              # Core management scripts
+│   │   ├── init-issues.sh    # Initialize system
+│   │   ├── create-issue.sh   # Create new issues
+│   │   ├── list-issues.sh    # List/filter issues
+│   │   ├── move-issue.sh     # Change issue states
+│   │   ├── search-issues.sh  # Search functionality
+│   │   └── version.sh        # System information
+│   ├── docs/                 # Methodology documentation
+│   ├── setup_new_project.sh  # Deploy to new projects
+│   └── issues/               # Issue files (created after init)
+├── core/                     # TrustOS core principles
+├── modules/                  # TrustOS functional modules
+├── assets/                   # Logos and visuals
+└── CLAUDE.md                 # This file
 ```
 
 ## Working with Issues
