@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+.temp/
+
+# Test deployments
+test_projects/
+example_deployments/
+
+# Issue tracking backups  
+.issues/config.json.bak
+.issues/temp/
