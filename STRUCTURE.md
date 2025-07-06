@@ -4,6 +4,8 @@
 
 TrustOS is organized into **three core layers**, each inspired by modern systems engineering and open-source software architecture. The architecture of TrustOS — including Core Principles, Functional Modules, and Practice Patterns. This modular approach allows users to adopt, extend, or remix TrustOS components based on their specific needs, industry, or maturity level.
 
+Additionally, TrustOS includes **technical tools** that implement these principles in code, providing practical implementations for teams who want to operationalize trust-driven assurance.
+
 ---
 
 ## 🧭 Layer 1: Core Principles
@@ -61,6 +63,22 @@ Real-world, scenario-based audit and assurance blueprints that combine design lo
 - **Patterns** are the user interface—applied, tailored, and iterated by teams in the field
 
 All layers are **open**, **versioned**, and **community-extensible**.
+
+---
+
+## 🔧 Technical Tools
+
+Practical implementations of TrustOS principles in code, designed for teams who want to operationalize trust-driven assurance.
+
+### Current Tools:
+- **trust-cli**: A local-first AI CLI assistant that embodies TrustOS privacy and transparency principles
+- More tools coming soon...
+
+### Philosophy:
+- **Privacy-first**: All processing happens locally when possible
+- **Transparency**: Open source, auditable implementations
+- **Trust-by-design**: Security and privacy built into the architecture
+- **Community-driven**: Open contribution and governance model
 
 ---
 

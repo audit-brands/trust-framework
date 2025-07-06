@@ -6,6 +6,11 @@
 
 TrustOS is a modular, open-source operating system for building trust through modern assurance. It combines control design, system feedback, and stakeholder outcomes that go beyond compliance. This repository contains the core modules, patterns, tools, and the principles behind TrustOS — a community-driven OS for modern assurance and control design. This framework is created by assurance practitioners for audit practitioners.
 
+## 🔧 What's Inside
+
+**TrustOS Framework**: Principles, modules, and patterns for trust-driven assurance
+**Technical Tools**: Local-first implementations including the trust-cli AI assistant
+
 ---
 
 ## 📐 Repository Structure
@@ -15,6 +20,7 @@ TrustOS is a modular, open-source operating system for building trust through mo
 | `/core/`      | Foundational principles including the [Manifesto](core/MANIFESTO.md), [Governance](core/GOVERNANCE.md), [Brand Usage](core/BRAND_USAGE.md), and [Contribution Guidelines](core/CONTRIBUTING.md) |
 | `/modules/`   | Functional assurance modules, starting with [Control Design & Maturity 2.0](modules/control_design_maturity/control_design_maturity.md) |
 | `/patterns/`  | Practice-based assurance patterns (coming soon) with YAML metadata, audit logic, and KPIs |
+| `/tools/`     | Technical tools that implement TrustOS principles, including the [trust-cli](tools/trust-cli/) local-first AI CLI |
 | `/assets/`    | Logos, infographics, and supporting visuals |
 | Root files    | Project [Blueprint](blueprint.md) and [STRUCTURE.md](STRUCTURE.md) overview for contributors |
 
