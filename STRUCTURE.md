@@ -1,19 +1,19 @@
-# TrustOS Framework Structure
+# Trust Framework Structure
 
 **Version 1.0 — Modular, Open, and Community-Driven**
 
-TrustOS is organized into **three core layers**, each inspired by modern systems engineering and open-source software architecture. The architecture of TrustOS — including Core Principles, Functional Modules, and Practice Patterns. This modular approach allows users to adopt, extend, or remix TrustOS components based on their specific needs, industry, or maturity level.
+Trust is organized into **three core layers**, each inspired by modern systems engineering and open-source software architecture. The architecture of Trust — including Core Principles, Functional Modules, and Practice Patterns. This modular approach allows users to adopt, extend, or remix Trust components based on their specific needs, industry, or maturity level.
 
-Additionally, TrustOS includes **technical tools** that implement these principles in code, providing practical implementations for teams who want to operationalize trust-driven assurance.
+Additionally, Trust includes **technical tools** that implement these principles in code, providing practical implementations for teams who want to operationalize trust-driven assurance.
 
 ---
 
 ## 🧭 Layer 1: Core Principles
 
-The foundation of TrustOS. This layer defines the shared values, beliefs, and design commitments that guide all other components.
+The foundation of Trust. This layer defines the shared values, beliefs, and design commitments that guide all other components.
 
 ### Includes:
-- TrustOS Manifesto
+- Trust Manifesto
 - Governance and contribution rules
 - Brand usage policy
 - Philosophy of trust-by-design and outcome-oriented assurance
@@ -68,10 +68,10 @@ All layers are **open**, **versioned**, and **community-extensible**.
 
 ## 🔧 Technical Tools
 
-Practical implementations of TrustOS principles in code, designed for teams who want to operationalize trust-driven assurance.
+Practical implementations of Trust principles in code, designed for teams who want to operationalize trust-driven assurance.
 
 ### Current Tools:
-- **trust-cli**: A local-first AI CLI assistant that embodies TrustOS privacy and transparency principles
+- **trust-cli**: A local-first AI CLI assistant that embodies Trust privacy and transparency principles
 - More tools coming soon...
 
 ### Philosophy:
@@ -89,4 +89,4 @@ Practical implementations of TrustOS principles in code, designed for teams who 
 - Read the [MANIFESTO.md](MANIFESTO.md) for more on our vision
 - Explore the [README.md](README.md) for contributor guidelines
 
-**Trust is a system. TrustOS is how we build it.**
+**Trust is a system. Trust is how we build it.**

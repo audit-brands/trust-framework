@@ -1,4 +1,4 @@
-# TrustOS Control Maturity 2.0 – Self-Correcting Control Diagnostic
+# Trust Control Maturity 2.0 – Self-Correcting Control Diagnostic
 
 **Module:** Control Design & Maturity 2.0  
 **File:** cybernetic_control_checklist.md

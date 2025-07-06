@@ -1,13 +1,13 @@
-# The TrustOS Manifesto
-*Version 1.0 – An Open Framework for Building Trust Through Assurance*
+# The Trust Manifesto
+*Version 1.0 – An Open System for Modern Assurance*
 
-The philosophical foundation of TrustOS. Why we built it, who it's for, and what we believe about trust and assurance.
+The philosophical foundation of Trust. Why we built it, who it's for, and what we believe about trust and assurance.
 
 We believe trust is not a byproduct.  
 It is not earned passively.  
 It must be built, stewarded, challenged, and re-earned—every day, in every system.
 
-We created **TrustOS** because:
+We created **Trust: An Open System for Modern Assurance** because:
 - Controls have become compliance checklists.
 - Assurance has been reduced to documentation.
 - Audit has drifted from its true purpose: to enable trust, not just to evaluate it.
@@ -27,7 +27,7 @@ We’re here to change that.
 
 ---
 
-## TrustOS Is:
+## Trust Is:
 
 - A **framework** for trust-driven control design
 - A **language** for insight, not just independence
@@ -36,7 +36,7 @@ We’re here to change that.
 
 ---
 
-## TrustOS Is Not:
+## Trust Is Not:
 
 - A certification mill  
 - A compliance factory  
@@ -57,7 +57,7 @@ We’re here to change that.
 
 ## What We Ask
 
-Use TrustOS.  
+Use Trust.  
 Fork it.  
 Contribute to it.  
 Challenge it.

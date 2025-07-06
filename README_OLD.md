@@ -52,11 +52,11 @@ Trust is a modular, open-source framework for building trust through modern assu
 
 **Trust: An Open System for Modern Assurance** is a community-driven, open framework. The name, logo, and associated visuals may be used freely to refer to the project, provided they are not used in a way that suggests official endorsement, partnership, or certification **without prior permission**.
 
-We encourage forks, adaptations, and creative reuse of our resources—just give credit where it's due:
+We encourage forks, adaptations, and creative reuse of our resources—just give credit where it’s due:
 
-> "Built on the Trust open framework"  
-> [https://github.com/audit-brands/trust-framework](https://github.com/audit-brands/trust-framework)
+> “Built on the Trust open framework”  
+> [https://github.com/audit-brands/trustos](https://github.com/audit-brands/trustos)
 
-If you're building something exciting using Trust, we'd love to hear about it!
+If you’re building something exciting using Trust, we’d love to hear about it!
 
-**Trust: An Open System for Modern Assurance**
+**Trust is a system. Trust is how we build it.**

@@ -2,6 +2,8 @@
 
 A local-first AI CLI assistant that embodies TrustOS privacy and transparency principles. Built as a fork of Google's Gemini CLI, trust-cli replaces cloud API calls with local GGUF model inference for complete privacy and offline capability.
 
+**🔗 Active Development Repository**: https://github.com/audit-brands/trust-cli
+
 ## Vision
 
 Fork Google's Gemini CLI to create a local-first AI workflow tool that uses GGUF models (Llama, Phi, Qwen, etc.) instead of cloud APIs, maintaining all the sophisticated features while ensuring complete privacy and offline capability.
@@ -36,11 +38,11 @@ This project embodies core TrustOS values:
 
 ## Getting Started
 
-*Coming soon - project is in planning phase*
+Visit the active development repository: https://github.com/audit-brands/trust-cli
 
 ## Contributing
 
-This project follows TrustOS contribution guidelines. See the main [CONTRIBUTING.md](../../core/CONTRIBUTING.md) for details.
+Active development happens in the separate trust-cli repository. This project follows TrustOS contribution guidelines - see the main [CONTRIBUTING.md](../../core/CONTRIBUTING.md) for details.
 
 ## License
 

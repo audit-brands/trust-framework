@@ -1,6 +1,6 @@
-# Contributing to TrustOS
+# Contributing to Trust
 
-Thank you for your interest in contributing to TrustOS — an open framework for building trust through assurance. Guidelines for contributing new modules, patterns, translations, and improvements to the project.
+Thank you for your interest in contributing to Trust — an open framework for building trust through assurance. Guidelines for contributing new modules, patterns, translations, and improvements to the project.
 
 ## Ways to Contribute
 
@@ -33,4 +33,4 @@ Thank you for your interest in contributing to TrustOS — an open framework for
 
 All contributors are expected to follow our [Governance](GOVERNANCE.md) values.
 
-Thank you for helping build TrustOS.
+Thank you for helping build Trust.

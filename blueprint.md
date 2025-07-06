@@ -1,15 +1,15 @@
-# TrustOS Blueprint
+# Trust Blueprint
 
 **Version 1.0 — A Modular System for Assurance, Insight, and Trust**
 
-TrustOS is an open-source, modular assurance framework designed for today’s fast-moving, data-rich, and trust-challenged organizations. Inspired by systems engineering and open governance, TrustOS provides a structured way to design, evaluate, and evolve trust mechanisms in complex environments.
+Trust is an open-source, modular assurance framework designed for today’s fast-moving, data-rich, and trust-challenged organizations. Inspired by systems engineering and open governance, Trust provides a structured way to design, evaluate, and evolve trust mechanisms in complex environments.
 
 ---
 
 ## 🧭 Three-Layer Architecture
 
 ### 1. Core Principles
-Defines the vision, values, and philosophy that shape TrustOS.
+Defines the vision, values, and philosophy that shape Trust.
 
 - [MANIFESTO.md](MANIFESTO.md)
 - [GOVERNANCE.md](GOVERNANCE.md)

@@ -1,13 +1,13 @@
-# TrustOS Governance
+# Trust Governance
 
 **Version 0.1 — Draft for Community Review**
 
-TrustOS is an open framework for building trust through assurance. It is developed and maintained by a growing community of contributors who believe that governance, risk, and control systems should be transparent, adaptive, and stakeholder-focused. Learn about our open contribution model, roles (steward, contributors, maintainers), and decision-making process.
+Trust is an open framework for building trust through assurance. It is developed and maintained by a growing community of contributors who believe that governance, risk, and control systems should be transparent, adaptive, and stakeholder-focused. Learn about our open contribution model, roles (steward, contributors, maintainers), and decision-making process.
 
 ## Guiding Principles
 
 - **Open by Default**: All decisions, contributions, and discussions are public and forkable.
-- **Community-Driven**: No single entity owns TrustOS; leadership emerges through contribution.
+- **Community-Driven**: No single entity owns Trust; leadership emerges through contribution.
 - **Mission-First**: We prioritize outcomes that increase trust, insight, and impact—not bureaucracy.
 - **Respectful Participation**: Contributors are expected to engage constructively and transparently.
 
@@ -23,13 +23,13 @@ All contributions are welcome. For significant changes, open an issue first to s
 
 - **Consensus Seeking**: We aim for consensus among maintainers for major changes.
 - **Pull Requests**: Accepted based on clarity, value alignment, and practical utility.
-- **Forking is Fair Game**: You are encouraged to fork, remix, or build on TrustOS for your own use case—with attribution.
+- **Forking is Fair Game**: You are encouraged to fork, remix, or build on Trust for your own use case—with attribution.
 
-## Use of the Name “TrustOS”
+## Use of the Name “Trust”
 
 To preserve the integrity and vision of the project:
 
-- You may **not** use the name “TrustOS” to describe a closed-source fork or proprietary variant without written permission.
+- You may **not** use the name “Trust” to describe a closed-source fork or proprietary variant without written permission.
 - Derivative projects must clearly distinguish themselves unless they contribute back to the core.
 - You **can** use the name to reference or cite the framework in educational, community, or academic work with attribution.
 

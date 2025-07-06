@@ -1,6 +1,6 @@
 # Control Design & Maturity 2.0
 
-**TrustOS Functional Module**  
+**Trust Functional Module**  
 Version 1.0
 
 This module introduces a modern approach to designing, evaluating, and evolving controls in complex, adaptive systems. It replaces outdated maturity concepts with a **cybernetic perspective**—treating controls as dynamic components of a system that can learn, respond, and self-correct.

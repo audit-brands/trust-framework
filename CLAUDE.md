@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## System Overview
 
-This repository contains **TrustOS** - an open-source operating system for building trust through modern assurance - and the **TrustOS Methodology System v1.0.0** located in the `TrustOS_Methodology/` subdirectory.
+This repository contains **Trust: An Open System for Modern Assurance** - an open-source framework for building trust through modern assurance - and the **Trust Methodology System v1.0.0** located in the `Trust_Methodology/` subdirectory.
 
-The **TrustOS Methodology System** is a complete local development methodology implementing Every.to's AI-driven engineering practices. It provides a local file-based alternative to GitHub Issues while maintaining full privacy and offline capability.
+The **Trust Methodology System** is a complete local development methodology implementing Every.to's AI-driven engineering practices. It provides a local file-based alternative to GitHub Issues while maintaining full privacy and offline capability.
 
 ## Core Architecture
 
@@ -23,7 +23,7 @@ The system is built around **local file-based issue tracking** with shell script
 ### Project Setup
 ```bash
 # Navigate to methodology system
-cd TrustOS_Methodology/
+cd Trust_Methodology/
 
 # Deploy to any new project
 ./setup_new_project.sh /path/to/project "Project Name"
@@ -38,7 +38,7 @@ cd TrustOS_Methodology/
 ### Issue Management (Primary Workflow)
 ```bash
 # Navigate to methodology system first
-cd TrustOS_Methodology/
+cd Trust_Methodology/
 
 # Create comprehensive issues with research
 ./scripts/create-issue.sh "Issue title" "priority" "label1,label2"
@@ -68,7 +68,7 @@ The system includes 4 custom commands designed for Claude Code:
 3. **`/dev-workflow`** - Development lifecycle management with Git integration
 4. **`/project-status`** - Comprehensive project reporting and next steps
 
-See `TrustOS_Methodology/docs/local_custom_commands.md` for complete command definitions.
+See `Trust_Methodology/docs/local_custom_commands.md` for complete command definitions.
 
 ## Development Workflow
 
@@ -88,8 +88,8 @@ See `TrustOS_Methodology/docs/local_custom_commands.md` for complete command def
 ## File Structure
 
 ```
-TrustOS/                      # Root repository
-├── TrustOS_Methodology/      # Development methodology system
+trust-framework/             # Root repository  
+├── Trust_Methodology/      # Development methodology system
 │   ├── scripts/              # Core management scripts
 │   │   ├── init-issues.sh    # Initialize system
 │   │   ├── create-issue.sh   # Create new issues
@@ -100,8 +100,8 @@ TrustOS/                      # Root repository
 │   ├── docs/                 # Methodology documentation
 │   ├── setup_new_project.sh  # Deploy to new projects
 │   └── issues/               # Issue files (created after init)
-├── core/                     # TrustOS core principles
-├── modules/                  # TrustOS functional modules
+├── core/                     # Trust: An Open System for Modern Assurance core principles
+├── modules/                  # Trust functional modules
 ├── assets/                   # Logos and visuals
 └── CLAUDE.md                 # This file
 ```
