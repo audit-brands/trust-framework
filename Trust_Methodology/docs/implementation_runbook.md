@@ -41,9 +41,9 @@ The Trust methodology emphasizes:
 
 2. **Copy the Trust system files**
    ```bash
-   # Copy the entire trustos_methodology_system to your project
-   cp -r /path/to/trustos_methodology_system ./trustos_system
-   cd trustos_system
+   # Copy the entire trust_methodology_system to your project
+   cp -r /path/to/trust_methodology_system ./trust_system
+   cd trust_system
    ```
 
 3. **Run the initialization script**

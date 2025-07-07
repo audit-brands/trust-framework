@@ -11,32 +11,32 @@ BLUE='\033[0;34m'
 YELLOW='\033[1;33m'
 NC='\033[0m'
 
-echo -e "${GREEN}🔄 Consolidating TrustOS Methodology System${NC}"
+echo -e "${GREEN}🔄 Consolidating Trust Methodology System${NC}"
 echo ""
 
 # Create consolidated directory structure
 echo -e "${BLUE}📁 Creating consolidated structure...${NC}"
-mkdir -p trustos_methodology_consolidated/{docs,examples}
+mkdir -p trust_methodology_consolidated/{docs,examples}
 
 # Copy system files (scripts, templates, etc.)
 echo -e "${BLUE}📋 Copying system files...${NC}"
-cp -r trustos_methodology_system/.templates trustos_methodology_consolidated/
-cp -r trustos_methodology_system/scripts trustos_methodology_consolidated/
-cp trustos_methodology_system/README.md trustos_methodology_consolidated/
+cp -r trust_methodology_system/.templates trust_methodology_consolidated/
+cp -r trust_methodology_system/scripts trust_methodology_consolidated/
+cp trust_methodology_system/README.md trust_methodology_consolidated/
 
 # Copy documentation
 echo -e "${BLUE}📖 Copying documentation...${NC}"
-cp -r trustos_methodology_system/docs/* trustos_methodology_consolidated/docs/
-cp trustos_methodology/*.md trustos_methodology_consolidated/docs/
+cp -r trust_methodology_system/docs/* trust_methodology_consolidated/docs/
+cp trust_methodology/*.md trust_methodology_consolidated/docs/
 
 # Create example configuration
 echo -e "${BLUE}⚙️ Creating example configuration...${NC}"
-mkdir -p trustos_methodology_consolidated/examples/sample_project
-cp -r trustos_methodology_system/.issues trustos_methodology_consolidated/examples/sample_project/
+mkdir -p trust_methodology_consolidated/examples/sample_project
+cp -r trust_methodology_system/.issues trust_methodology_consolidated/examples/sample_project/
 
 # Update the main README
-cat > trustos_methodology_consolidated/README.md << 'EOF'
-# TrustOS Methodology - Complete System
+cat > trust_methodology_consolidated/README.md << 'EOF'
+# Trust Methodology - Complete System
 
 A comprehensive local development methodology based on Every.to's AI-driven engineering practices.
 
@@ -79,10 +79,10 @@ For issues or questions, refer to the documentation in the `docs/` directory.
 EOF
 
 # Create setup script for this version
-cat > trustos_methodology_consolidated/setup_new_project.sh << 'EOF'
+cat > trust_methodology_consolidated/setup_new_project.sh << 'EOF'
 #!/bin/bash
 
-# setup_new_project.sh - Set up TrustOS methodology for a new project
+# setup_new_project.sh - Set up Trust methodology for a new project
 # Usage: ./setup_new_project.sh /path/to/new/project "Project Name"
 
 set -e
@@ -99,7 +99,7 @@ fi
 # Get the directory where this script is located
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-echo "🚀 Setting up TrustOS methodology for: $PROJECT_NAME"
+echo "🚀 Setting up Trust methodology for: $PROJECT_NAME"
 echo "Target: $TARGET_DIR"
 
 # Create target directory
@@ -120,15 +120,15 @@ echo "2. Set up Claude Code commands from docs/local_custom_commands.md"
 echo "3. Create first issue: /local-issue-create \"Your first feature\""
 EOF
 
-chmod +x trustos_methodology_consolidated/setup_new_project.sh
+chmod +x trust_methodology_consolidated/setup_new_project.sh
 
 echo ""
 echo -e "${GREEN}✅ Consolidation complete!${NC}"
 echo ""
-echo "New consolidated structure created: trustos_methodology_consolidated/"
+echo "New consolidated structure created: trust_methodology_consolidated/"
 echo ""
 echo "To use with your 5_star_dashboards project:"
-echo "1. cd trustos_methodology_consolidated"
+echo "1. cd trust_methodology_consolidated"
 echo "2. ./setup_new_project.sh /Users/jontiveros/Development/5_star_dashboards \"5 Star Dashboards\""
 echo ""
 echo "Or keep the original separate folders if you prefer."

@@ -17,15 +17,15 @@ A comprehensive local file-based issue tracking system implementing the Every.to
 ### Manual Setup
 ```bash
 # Copy this entire directory to your project
-cp -r . /path/to/your/project/trustos_system
-cd /path/to/your/project/trustos_system
+cp -r . /path/to/your/project/trust_system
+cd /path/to/your/project/trust_system
 ./scripts/init-issues.sh "Your Project Name"
 ```
 
 ## 📁 What's Included
 
 ```
-trustos_methodology_v1.0.0/
+trust_methodology_v1.0.0/
 ├── README_v1.md                  # This file
 ├── VERSION.md                    # v1.0.0
 ├── CHANGELOG.md                  # Complete feature history
@@ -42,7 +42,7 @@ trustos_methodology_v1.0.0/
 └── docs/                        # Complete documentation
     ├── implementation_runbook.md    # Setup guide
     ├── local_custom_commands.md     # Claude Code commands
-    ├── trustos_development_process.md # Core methodology
+    ├── trust_development_process.md # Core methodology
     └── github_integration_alternatives.md # Why local works
 ```
 
