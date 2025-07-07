@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# consolidate_methodology.sh - Consolidate trustos_methodology and trustos_methodology_system
+# consolidate_methodology.sh - Consolidate trust_methodology and trust_methodology_system
 # Usage: ./consolidate_methodology.sh
 
 set -e

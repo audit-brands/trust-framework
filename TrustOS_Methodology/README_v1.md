@@ -1,4 +1,4 @@
-# TrustOS Methodology System v1.0.0
+# Trust Methodology System v1.0.0
 **Complete Local Development Methodology**
 
 A comprehensive local file-based issue tracking system implementing the Every.to team's development methodology, designed for Claude Code integration while keeping sensitive code private.
@@ -7,7 +7,7 @@ A comprehensive local file-based issue tracking system implementing the Every.to
 
 ### For New Projects
 ```bash
-# Set up TrustOS methodology in any project
+# Set up Trust methodology in any project
 ./setup_new_project.sh /path/to/your/project "Project Name"
 
 # Example
@@ -181,4 +181,4 @@ This release includes everything needed for production AI-driven development:
 
 **Ready to revolutionize your development process?** Start with the [Implementation Runbook](docs/implementation_runbook.md) for complete setup instructions.
 
-*TrustOS Methodology System v1.0.0 - Making AI-driven development accessible while keeping your code private.*
+*Trust Methodology System v1.0.0 - Making AI-driven development accessible while keeping your code private.*

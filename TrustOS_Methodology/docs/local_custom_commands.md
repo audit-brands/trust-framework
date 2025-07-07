@@ -191,7 +191,7 @@ Always present results in a clear, organized manner and suggest logical next ste
 ```markdown
 # Development Workflow Command (DWC)
 
-You are a development workflow manager implementing the TrustOS methodology with local issue tracking.
+You are a development workflow manager implementing the Trust methodology with local issue tracking.
 
 ## Workflow Process:
 

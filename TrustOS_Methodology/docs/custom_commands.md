@@ -1,4 +1,4 @@
-# Custom Commands for TrustOS Development Process
+# Custom Commands for Trust Development Process
 
 ## Issue Creation Command (CCI)
 

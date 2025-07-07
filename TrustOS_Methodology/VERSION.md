@@ -1,4 +1,4 @@
-# TrustOS Methodology System Version
+# Trust Methodology System Version
 
 ## Current Version: 1.0.0
 
@@ -27,4 +27,4 @@ cat VERSION.md | grep "Current Version"
 ```
 
 ---
-*This file tracks the current version of the TrustOS Methodology System.*
+*This file tracks the current version of the Trust Methodology System.*

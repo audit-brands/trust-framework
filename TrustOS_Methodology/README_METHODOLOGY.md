@@ -1,4 +1,4 @@
-# TrustOS Methodology System
+# Trust Methodology System
 **Version 1.0.0 - Standalone Repository**
 
 A complete local development methodology system implementing Every.to's AI-driven engineering practices.
@@ -31,7 +31,7 @@ Deploy to any project:
 ## 📁 Repository Structure
 
 ```
-TrustOS_Methodology/
+Trust_Methodology/
 ├── README.md                     # This file
 ├── VERSION.md                    # Version info
 ├── CHANGELOG.md                  # Release history

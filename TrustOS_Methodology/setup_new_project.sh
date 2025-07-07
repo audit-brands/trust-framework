@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# setup_new_project.sh - Set up TrustOS methodology for a new project
+# setup_new_project.sh - Set up Trust methodology for a new project
 # Usage: ./setup_new_project.sh /path/to/new/project "Project Name"
 
 set -e
@@ -28,7 +28,7 @@ fi
 
 # Check if methodology source exists
 if [ ! -d "$METHODOLOGY_SOURCE" ]; then
-    echo -e "${RED}Error: TrustOS methodology source not found at $METHODOLOGY_SOURCE${NC}"
+    echo -e "${RED}Error: Trust methodology source not found at $METHODOLOGY_SOURCE${NC}"
     exit 1
 fi
 
@@ -38,12 +38,12 @@ if [ ! -d "$TARGET_DIR" ]; then
     mkdir -p "$TARGET_DIR"
 fi
 
-echo -e "${GREEN}🚀 Setting up TrustOS methodology for: $PROJECT_NAME${NC}"
+echo -e "${GREEN}🚀 Setting up Trust methodology for: $PROJECT_NAME${NC}"
 echo "Target directory: $TARGET_DIR"
 echo ""
 
 # Copy methodology system to target
-echo -e "${BLUE}📋 Copying TrustOS methodology system...${NC}"
+echo -e "${BLUE}📋 Copying Trust methodology system...${NC}"
 cp -r "$METHODOLOGY_SOURCE" "$TARGET_DIR/trustos_system"
 
 # Initialize the issue tracking system
@@ -52,7 +52,7 @@ cd "$TARGET_DIR/trustos_system"
 ./scripts/init-issues.sh "$PROJECT_NAME"
 
 echo ""
-echo -e "${GREEN}✅ TrustOS methodology successfully set up!${NC}"
+echo -e "${GREEN}✅ Trust methodology successfully set up!${NC}"
 echo ""
 echo "Next steps:"
 echo "1. Navigate to your project:"
@@ -66,6 +66,6 @@ echo "3. Create your first issue:"
 echo "   cd trustos_system"
 echo "   /local-issue-create \"Your first feature\""
 echo ""
-echo "4. Start developing with TrustOS methodology!"
+echo "4. Start developing with Trust methodology!"
 echo ""
 echo "Documentation available at: $TARGET_DIR/trustos_system/docs/"

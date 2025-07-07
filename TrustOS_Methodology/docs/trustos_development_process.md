@@ -1,4 +1,4 @@
-# TrustOS Development Process
+# Trust Development Process
 
 *Based on insights from Kieran Klaassen and Nityesh Agarwal's workflow at Every (Cora team)*
 

@@ -1,10 +1,10 @@
-# TrustOS Development Process - Local Implementation Runbook
+# Trust Development Process - Local Implementation Runbook
 
-This runbook provides step-by-step instructions for implementing the TrustOS development process using a local file-based issue tracking system, based on insights from the Every.to team's workflow.
+This runbook provides step-by-step instructions for implementing the Trust development process using a local file-based issue tracking system, based on insights from the Every.to team's workflow.
 
 ## Overview
 
-The TrustOS methodology emphasizes:
+The Trust methodology emphasizes:
 - **Compounding engineering**: Each task makes future tasks easier
 - **Research-first approach**: Thorough planning before implementation
 - **Human review checkpoints**: Catch problems early in the process
@@ -39,7 +39,7 @@ The TrustOS methodology emphasizes:
    cd /path/to/your/project
    ```
 
-2. **Copy the TrustOS system files**
+2. **Copy the Trust system files**
    ```bash
    # Copy the entire trustos_methodology_system to your project
    cp -r /path/to/trustos_methodology_system ./trustos_system
@@ -101,7 +101,7 @@ The TrustOS methodology emphasizes:
 
 ## Phase 2: Workflow Implementation
 
-### The TrustOS Development Cycle
+### The Trust Development Cycle
 
 ```
 Idea → Research → Plan → Review → Implement → Test → Deploy
@@ -226,7 +226,7 @@ Idea → Research → Plan → Review → Implement → Test → Deploy
 
 2. **Create handoff documentation**
    ```
-   /local-issue-create Document the TrustOS methodology implementation for team onboarding
+   /local-issue-create Document the Trust methodology implementation for team onboarding
    ```
 
 ## Troubleshooting
@@ -278,7 +278,7 @@ Idea → Research → Plan → Review → Implement → Test → Deploy
 
 ## Success Metrics
 
-Track these metrics to measure TrustOS methodology effectiveness:
+Track these metrics to measure Trust methodology effectiveness:
 
 ### Quantitative Metrics
 ```bash
@@ -345,4 +345,4 @@ Edit `.issues/config.json` to add project-specific labels:
 
 ---
 
-*Remember: The key to TrustOS methodology success is consistent use and continuous refinement of your prompts and workflows. Each project teaches you how to make the next project faster and more effective.*
+*Remember: The key to Trust methodology success is consistent use and continuous refinement of your prompts and workflows. Each project teaches you how to make the next project faster and more effective.*

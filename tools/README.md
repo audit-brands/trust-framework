@@ -1,17 +1,17 @@
-# TrustOS Tools
+# Trust Tools
 
-Technical implementations that embody TrustOS principles of privacy, transparency, and trust-by-design.
+Technical implementations that embody Trust principles of privacy, transparency, and trust-by-design.
 
 ## Available Tools
 
 ### 🔧 [trust-cli](trust-cli/)
-A local-first AI CLI assistant that embodies TrustOS privacy and transparency principles. Built as a fork of Google's Gemini CLI, trust-cli replaces cloud API calls with local GGUF model inference for complete privacy and offline capability.
+A local-first AI CLI assistant that embodies Trust privacy and transparency principles. Built as a fork of Google's Gemini CLI, trust-cli replaces cloud API calls with local GGUF model inference for complete privacy and offline capability.
 
 **Active Development**: https://github.com/audit-brands/trust-cli
 
 ## Tool Philosophy
 
-All TrustOS tools share common principles:
+All Trust tools share common principles:
 
 - **Privacy-first**: All processing happens locally when possible
 - **Transparency**: Open source, auditable implementations  
@@ -20,7 +20,7 @@ All TrustOS tools share common principles:
 
 ## Contributing
 
-New tools that align with TrustOS principles are welcome. See the main [CONTRIBUTING.md](../core/CONTRIBUTING.md) for guidelines.
+New tools that align with Trust principles are welcome. See the main [CONTRIBUTING.md](../core/CONTRIBUTING.md) for guidelines.
 
 ## Roadmap
 

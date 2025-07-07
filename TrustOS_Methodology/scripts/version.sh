@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# version.sh - Display TrustOS Methodology System version information
+# version.sh - Display Trust Methodology System version information
 # Usage: ./version.sh
 
 set -e
@@ -32,7 +32,7 @@ else
     LAST_ISSUE="0"
 fi
 
-echo -e "${GREEN}🔧 TrustOS Methodology System${NC}"
+echo -e "${GREEN}🔧 Trust Methodology System${NC}"
 echo -e "${BLUE}Version:${NC} $VERSION"
 echo ""
 echo -e "${BLUE}Project Information:${NC}"
