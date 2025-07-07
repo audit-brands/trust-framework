@@ -55,7 +55,7 @@ Trust is a modular, open-source framework for building trust through modern assu
 We encourage forks, adaptations, and creative reuse of our resources—just give credit where it’s due:
 
 > “Built on the Trust open framework”  
-> [https://github.com/audit-brands/trustos](https://github.com/audit-brands/trustos)
+> [https://github.com/audit-brands/trust-framework](https://github.com/audit-brands/trust-framework)
 
 If you’re building something exciting using Trust, we’d love to hear about it!
 
