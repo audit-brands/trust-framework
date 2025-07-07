@@ -4,131 +4,78 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## System Overview
 
-This repository contains **Trust: An Open System for Modern Assurance** - an open-source framework for building trust through modern assurance - and the **Trust Methodology System v1.0.0** located in the `Trust_Methodology/` subdirectory.
+This repository contains **Trust: An Open System for Modern Assurance** - an open-source framework for building trust through modern assurance.
 
-The **Trust Methodology System** is a complete local development methodology implementing Every.to's AI-driven engineering practices. It provides a local file-based alternative to GitHub Issues while maintaining full privacy and offline capability.
-
-## Core Architecture
-
-The system is built around **local file-based issue tracking** with shell script automation:
-
-- **Issues stored as files** in `issues/` directory with YAML frontmatter
-- **Workflow states**: backlog → in-progress → review → done  
-- **Shell script suite** for all operations (create, list, move, search issues)
-- **Git integration** with automatic commits and branch management
-- **Claude Code custom commands** for AI-driven development workflow
-
-## Essential Commands
-
-### Project Setup
-```bash
-# Navigate to methodology system
-cd Trust_Methodology/
-
-# Deploy to any new project
-./setup_new_project.sh /path/to/project "Project Name"
-
-# Initialize in current directory  
-./scripts/init-issues.sh "Project Name"
-
-# Check system version and health
-./scripts/version.sh
-```
-
-### Issue Management (Primary Workflow)
-```bash
-# Navigate to methodology system first
-cd Trust_Methodology/
-
-# Create comprehensive issues with research
-./scripts/create-issue.sh "Issue title" "priority" "label1,label2"
-
-# List and filter issues
-./scripts/list-issues.sh                    # All issues
-./scripts/list-issues.sh backlog            # By status
-./scripts/list-issues.sh --format=brief     # Compact view
-./scripts/list-issues.sh --stats            # Statistics
-
-# Move through workflow states
-./scripts/move-issue.sh 1 in-progress "Starting work"
-./scripts/move-issue.sh 1 review "Ready for testing"  
-./scripts/move-issue.sh 1 done "Completed successfully"
-
-# Search across all content
-./scripts/search-issues.sh "search term"
-./scripts/search-issues.sh --recent=5
-```
-
-## Claude Code Integration
-
-The system includes 4 custom commands designed for Claude Code:
-
-1. **`/local-issue-create`** - AI-powered issue creation with 15-20 minute research phase
-2. **`/issue-manage`** - Issue listing, filtering, and status management
-3. **`/dev-workflow`** - Development lifecycle management with Git integration
-4. **`/project-status`** - Comprehensive project reporting and next steps
-
-See `Trust_Methodology/docs/local_custom_commands.md` for complete command definitions.
-
-## Development Workflow
-
-### Standard Process:
-1. **Idea → Research**: Use `/local-issue-create` for AI-driven planning
-2. **Human Review**: Always review generated issue plans before implementation
-3. **Implementation**: Use `/dev-workflow` to manage Git branches and progress
-4. **Quality**: Move through review phase with testing
-5. **Completion**: Merge branches and mark issues done
-
-### Key Principles:
-- **"Fix at lowest value stage"** - catch problems during planning, not implementation
-- **Compounding engineering** - each task should make future tasks easier
-- **Long-running AI workflows** - aim for 15-25 minute continuous execution
-- **Human review checkpoints** - maintain quality control
-
-## File Structure
+## Repository Structure
 
 ```
 trust-framework/             # Root repository  
-├── Trust_Methodology/      # Development methodology system
-│   ├── scripts/              # Core management scripts
-│   │   ├── init-issues.sh    # Initialize system
-│   │   ├── create-issue.sh   # Create new issues
-│   │   ├── list-issues.sh    # List/filter issues
-│   │   ├── move-issue.sh     # Change issue states
-│   │   ├── search-issues.sh  # Search functionality
-│   │   └── version.sh        # System information
-│   ├── docs/                 # Methodology documentation
-│   ├── setup_new_project.sh  # Deploy to new projects
-│   └── issues/               # Issue files (created after init)
-├── core/                     # Trust: An Open System for Modern Assurance core principles
-├── modules/                  # Trust functional modules
-├── assets/                   # Logos and visuals
-└── CLAUDE.md                 # This file
+├── core/                    # Trust: An Open System for Modern Assurance core principles
+│   ├── MANIFESTO.md        # Vision and philosophy
+│   ├── GOVERNANCE.md       # Open governance model
+│   ├── BRAND_USAGE.md      # Brand guidelines
+│   └── CONTRIBUTING.md     # Contribution guidelines
+├── modules/                 # Trust functional modules
+│   └── control_design_maturity/  # Control maturity framework
+├── patterns/                # Practice-based assurance patterns (coming soon)
+├── tools/                   # Technical implementations
+│   ├── trust-cli/          # Local-first AI CLI assistant
+│   └── local-issue-tracker/  # File-based issue tracking system
+├── docs/                    # Documentation
+│   └── kedro_inspiration.md  # Kedro-inspired architecture plans
+└── assets/                  # Logos and visuals
 ```
 
-## Working with Issues
+## Key Concepts
 
-### Issue File Format:
-Issues are stored as markdown files with YAML frontmatter containing metadata (status, priority, labels, assignee, etc.) and full markdown content for requirements, implementation plans, and discussions.
+### Trust Framework
+- **Modular architecture**: Core principles, functional modules, and practice patterns
+- **Open source**: Community-driven development and governance
+- **Assurance focus**: Designed for audit practitioners and risk professionals
+- **Local-first**: Privacy-preserving tools and offline capability
 
-### Always Use Scripts:
-- **Never manually edit** issue files - use the provided scripts
-- Scripts handle Git commits, metadata updates, and state transitions
-- This ensures consistency and proper workflow tracking
+### Available Tools
 
-## Dependencies
+1. **trust-cli**: A local-first AI assistant that uses GGUF models for complete privacy
+   - Located in `/tools/trust-cli/`
+   - Separate repository: https://github.com/audit-brands/trust-cli
 
-- **Git** - Version control integration
-- **jq** - JSON processing for configuration  
-- **Claude Code Pro/Max** - For unlimited AI agent usage
+2. **local-issue-tracker**: A file-based issue tracking system
+   - Located in `/tools/local-issue-tracker/`
+   - Run `./setup_new_project.sh` to deploy to any project
 
-## Testing and Validation
+## Working with Trust Content
 
-No specific test framework - this is a shell script and documentation system. Validate by:
-- Running `./scripts/version.sh` for system health
-- Testing issue creation/management workflow
-- Verifying Git integration works properly
+### Modules
+- Each module in `/modules/` contains functional assurance frameworks
+- Currently includes Control Design & Maturity 2.0
+- Modules use markdown format with optional YAML metadata
 
-## Privacy and Local Operation
+### Patterns (Coming Soon)
+- Will contain practice-based blueprints
+- Combine control design with feedback loops and KPIs
+- Include industry-specific overlays
 
-This system operates **100% locally** with no external dependencies beyond Claude Code itself. All issue data, project information, and workflow state remains on your machine.
+### Contributing
+- Follow guidelines in `/core/CONTRIBUTING.md`
+- Submit new modules or patterns via pull request
+- Maintain markdown format and clear documentation
+
+## Development Guidelines
+
+1. **Preserve simplicity**: Trust content should remain human-readable markdown
+2. **Maintain modularity**: Components should work independently
+3. **Document thoroughly**: Each module/pattern needs clear documentation
+4. **Test locally**: Ensure changes work offline
+
+## Future Enhancements
+
+See `/docs/kedro_inspiration.md` for planned improvements including:
+- Project scaffolding tools
+- Visualization capabilities
+- CI/CD automation
+- Pattern metadata schema
+
+---
+
+*For questions about the Trust framework, refer to the MANIFESTO.md and blueprint.md files.*
