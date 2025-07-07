@@ -1,4 +1,4 @@
-![Trust Logo](assets/Trust_white_back.png)
+![Trust Logo](assets/trust_white_background_navy_text.png)
 
 # Trust: An Open System for Modern Assurance
 
