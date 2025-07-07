@@ -1,0 +1,545 @@
+#!/usr/bin/env python3
+"""
+OpenAudit Engagement Automation CLI
+Proof of Concept demonstrating AI-assisted audit planning and execution
+"""
+
+import argparse
+import sys
+import json
+import yaml
+from pathlib import Path
+from datetime import datetime, timedelta
+from rich.console import Console
+from rich.table import Table
+from rich.panel import Panel
+from rich.progress import Progress
+from rich import print as rprint
+
+console = Console()
+
+def init_engagement(name, entity, framework=None):
+    """Initialize a new audit engagement with AI-assisted setup"""
+    
+    engagement_dir = Path(f".openaudit/{name.replace(' ', '_')}")
+    engagement_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Create engagement configuration
+    config = {
+        "engagement": {
+            "name": name,
+            "entity": entity,
+            "framework": framework or "custom",
+            "created_date": datetime.now().isoformat(),
+            "status": "planning",
+            "stakeholders": []
+        },
+        "risk_profile": {
+            "industry": None,
+            "size": None,
+            "complexity": None,
+            "risk_appetite": "moderate"
+        },
+        "automation_settings": {
+            "evidence_gathering": "medium",
+            "testing_automation": "medium",
+            "reporting_frequency": "weekly"
+        }
+    }
+    
+    with open(engagement_dir / "config.yaml", "w") as f:
+        yaml.dump(config, f, default_flow_style=False)
+    
+    # Create directory structure
+    (engagement_dir / "evidence").mkdir(exist_ok=True)
+    (engagement_dir / "workpapers").mkdir(exist_ok=True)
+    (engagement_dir / "reports").mkdir(exist_ok=True)
+    (engagement_dir / "stakeholder_feedback").mkdir(exist_ok=True)
+    
+    console.print(Panel(f"""
+[bold green]✅ Engagement Initialized: {name}[/bold green]
+
+[bold]Entity:[/bold] {entity}
+[bold]Framework:[/bold] {framework or 'Custom'}
+[bold]Directory:[/bold] {engagement_dir}
+
+[bold cyan]Next Steps:[/bold cyan]
+1. Configure organizational profile: [bold]openaudit profile --industry=X --size=Y[/bold]
+2. Generate work program: [bold]openaudit plan[/bold]
+3. Begin execution: [bold]openaudit execute[/bold]
+    """, title="🚀 OpenAudit Engagement"))
+
+def profile_organization(industry=None, size=None, complexity=None):
+    """Configure organizational risk profile for AI-assisted planning"""
+    
+    engagement_dir = get_current_engagement()
+    if not engagement_dir:
+        return
+    
+    config_file = engagement_dir / "config.yaml"
+    with open(config_file, "r") as f:
+        config = yaml.safe_load(f)
+    
+    if industry:
+        config["risk_profile"]["industry"] = industry
+    if size:
+        config["risk_profile"]["size"] = size  
+    if complexity:
+        config["risk_profile"]["complexity"] = complexity
+    
+    with open(config_file, "w") as f:
+        yaml.dump(config, f, default_flow_style=False)
+    
+    # AI-assisted risk assessment based on profile
+    risk_areas = generate_risk_assessment(config["risk_profile"])
+    
+    console.print(Panel(f"""
+[bold green]✅ Organizational Profile Updated[/bold green]
+
+[bold]Industry:[/bold] {industry or 'Not specified'}
+[bold]Size:[/bold] {size or 'Not specified'}
+[bold]Complexity:[/bold] {complexity or 'Not specified'}
+
+[bold cyan]AI-Generated Risk Priorities:[/bold cyan]
+{format_risk_areas(risk_areas)}
+
+[bold]Next Step:[/bold] [bold]openaudit plan[/bold] to generate work program
+    """, title="🎯 Risk Profile"))
+
+def generate_work_program(timeline=90, automation_level="medium"):
+    """Generate AI-assisted work program based on risk profile"""
+    
+    engagement_dir = get_current_engagement()
+    if not engagement_dir:
+        return
+    
+    config_file = engagement_dir / "config.yaml"
+    with open(config_file, "r") as f:
+        config = yaml.safe_load(f)
+    
+    # Generate work program based on configuration
+    work_program = create_work_program(config, timeline, automation_level)
+    
+    # Save work program
+    with open(engagement_dir / "work_program.yaml", "w") as f:
+        yaml.dump(work_program, f, default_flow_style=False)
+    
+    # Display work program summary
+    display_work_program(work_program)
+
+def execute_engagement(workstream=None, automation="medium"):
+    """Execute audit engagement with automated assistance"""
+    
+    engagement_dir = get_current_engagement()
+    if not engagement_dir:
+        return
+    
+    work_program_file = engagement_dir / "work_program.yaml"
+    if not work_program_file.exists():
+        console.print("[red]❌ No work program found. Run 'openaudit plan' first.[/red]")
+        return
+    
+    with open(work_program_file, "r") as f:
+        work_program = yaml.safe_load(f)
+    
+    if workstream:
+        execute_workstream(workstream, automation, engagement_dir)
+    else:
+        execute_all_workstreams(work_program, automation, engagement_dir)
+
+def generate_stakeholder_report(stakeholder="management", format="dashboard"):
+    """Generate stakeholder-specific reporting"""
+    
+    engagement_dir = get_current_engagement()
+    if not engagement_dir:
+        return
+    
+    # Generate report based on current progress and findings
+    report_data = compile_engagement_data(engagement_dir)
+    stakeholder_report = create_stakeholder_report(report_data, stakeholder, format)
+    
+    # Save and display report
+    report_file = engagement_dir / "reports" / f"{stakeholder}_{format}_{datetime.now().strftime('%Y%m%d')}.html"
+    with open(report_file, "w") as f:
+        f.write(stakeholder_report)
+    
+    console.print(Panel(f"""
+[bold green]✅ Stakeholder Report Generated[/bold green]
+
+[bold]Stakeholder:[/bold] {stakeholder.title()}
+[bold]Format:[/bold] {format.title()}
+[bold]File:[/bold] {report_file}
+
+[bold cyan]Key Metrics:[/bold cyan]
+• Progress: 67% complete
+• Findings: 8 identified, 3 high priority
+• Value Created: $2.3M risk exposure identified
+• Stakeholder Satisfaction: 4.2/5.0
+
+[bold]Next Step:[/bold] [bold]openaudit status[/bold] for detailed progress
+    """, title="📊 Stakeholder Report"))
+
+def show_engagement_status():
+    """Display current engagement status and progress"""
+    
+    engagement_dir = get_current_engagement()
+    if not engagement_dir:
+        return
+    
+    # Load configuration and progress data
+    config_file = engagement_dir / "config.yaml"
+    with open(config_file, "r") as f:
+        config = yaml.safe_load(f)
+    
+    # Create status dashboard
+    table = Table(title="🎯 Engagement Status Dashboard")
+    table.add_column("Workstream", style="cyan")
+    table.add_column("Progress", style="green")
+    table.add_column("Status", style="yellow")
+    table.add_column("Next Action", style="blue")
+    
+    # Mock progress data for demonstration
+    workstreams = [
+        ("Risk Assessment", "100%", "Complete", "Review findings"),
+        ("Access Controls", "75%", "In Progress", "Complete testing"),
+        ("Data Protection", "50%", "In Progress", "Evidence gathering"),
+        ("Change Management", "25%", "Planning", "Begin fieldwork"),
+        ("Monitoring Controls", "0%", "Not Started", "Schedule interviews")
+    ]
+    
+    for ws, progress, status, action in workstreams:
+        table.add_row(ws, progress, status, action)
+    
+    console.print(table)
+    
+    # Show key metrics
+    metrics_panel = Panel(f"""
+[bold cyan]📈 Key Metrics[/bold cyan]
+• Overall Progress: 65% complete
+• Findings Identified: 12 (4 high, 5 medium, 3 low)
+• Value Creation: $2.8M potential risk reduction
+• Stakeholder Feedback: 4.3/5.0 average
+• Days Remaining: 23 of 90
+
+[bold green]🎯 Recent Achievements[/bold green]
+• Automated 847 access control tests (95% pass rate)
+• Identified critical data encryption gap
+• Streamlined vendor management process
+• Reduced manual testing time by 60%
+    """, title="📊 Engagement Metrics")
+    
+    console.print(metrics_panel)
+
+# Helper functions
+
+def get_current_engagement():
+    """Find the current engagement directory"""
+    openaudit_dir = Path(".openaudit")
+    if not openaudit_dir.exists():
+        console.print("[red]❌ No OpenAudit engagement found. Run 'openaudit init' first.[/red]")
+        return None
+    
+    # For now, return the most recent engagement
+    engagements = list(openaudit_dir.iterdir())
+    if not engagements:
+        console.print("[red]❌ No engagements found. Run 'openaudit init' first.[/red]")
+        return None
+    
+    return sorted(engagements, key=lambda x: x.stat().st_mtime)[-1]
+
+def generate_risk_assessment(risk_profile):
+    """AI-assisted risk assessment based on organizational profile"""
+    
+    # Mock AI-generated risk assessment
+    industry_risks = {
+        "saas": ["Data privacy", "Access controls", "Availability", "Vendor management"],
+        "healthcare": ["HIPAA compliance", "Patient data security", "Device security", "Incident response"],
+        "financial": ["SOX compliance", "Customer data protection", "Fraud prevention", "Regulatory reporting"]
+    }
+    
+    size_risks = {
+        "startup": ["Resource constraints", "Rapid growth controls", "Segregation of duties"],
+        "enterprise": ["Complex integrations", "Change management", "Vendor ecosystem"]
+    }
+    
+    industry = risk_profile.get("industry", "general")
+    size = risk_profile.get("size", "medium")
+    
+    risks = industry_risks.get(industry, ["General IT controls", "Process controls", "Compliance"])
+    risks.extend(size_risks.get(size, []))
+    
+    return risks[:6]  # Top 6 risks
+
+def format_risk_areas(risk_areas):
+    """Format risk areas for display"""
+    return "\n".join([f"  • {risk}" for risk in risk_areas])
+
+def create_work_program(config, timeline, automation_level):
+    """Generate work program based on configuration"""
+    
+    # Mock work program generation
+    work_program = {
+        "timeline": {
+            "start_date": datetime.now().isoformat()[:10],
+            "end_date": (datetime.now() + timedelta(days=timeline)).isoformat()[:10],
+            "duration_days": timeline
+        },
+        "workstreams": [
+            {
+                "name": "Risk Assessment",
+                "priority": "high",
+                "automation_level": "high",
+                "estimated_hours": 16,
+                "procedures": [
+                    "Automated risk data gathering",
+                    "Stakeholder interviews",
+                    "Risk prioritization workshop"
+                ]
+            },
+            {
+                "name": "Access Controls",
+                "priority": "high", 
+                "automation_level": automation_level,
+                "estimated_hours": 32,
+                "procedures": [
+                    "Automated access review testing",
+                    "Privileged access analysis",
+                    "Segregation of duties review"
+                ]
+            },
+            {
+                "name": "Data Protection",
+                "priority": "medium",
+                "automation_level": "medium",
+                "estimated_hours": 24,
+                "procedures": [
+                    "Data classification review",
+                    "Encryption testing",
+                    "Data retention compliance"
+                ]
+            }
+        ],
+        "automation_summary": {
+            "total_procedures": 9,
+            "automated_procedures": 6,
+            "automation_percentage": 67
+        }
+    }
+    
+    return work_program
+
+def display_work_program(work_program):
+    """Display work program in formatted table"""
+    
+    table = Table(title="🎯 AI-Generated Work Program")
+    table.add_column("Workstream", style="cyan")
+    table.add_column("Priority", style="yellow")
+    table.add_column("Hours", style="green")
+    table.add_column("Automation", style="blue")
+    table.add_column("Key Procedures", style="white")
+    
+    for ws in work_program["workstreams"]:
+        procedures = "\n".join([f"• {proc}" for proc in ws["procedures"][:2]])
+        if len(ws["procedures"]) > 2:
+            procedures += f"\n• ... +{len(ws['procedures'])-2} more"
+        
+        table.add_row(
+            ws["name"],
+            ws["priority"].title(),
+            str(ws["estimated_hours"]),
+            ws["automation_level"].title(),
+            procedures
+        )
+    
+    console.print(table)
+    
+    summary = Panel(f"""
+[bold cyan]📋 Work Program Summary[/bold cyan]
+• Total Duration: {work_program['timeline']['duration_days']} days
+• Total Procedures: {work_program['automation_summary']['total_procedures']}
+• Automated Procedures: {work_program['automation_summary']['automated_procedures']}
+• Automation Level: {work_program['automation_summary']['automation_percentage']}%
+
+[bold green]🚀 Efficiency Gains[/bold green]
+• 67% of testing automated vs. traditional manual approach
+• Estimated 40% time savings through AI assistance
+• Real-time progress tracking for stakeholders
+• Automated evidence gathering and analysis
+    """, title="📊 Automation Benefits")
+    
+    console.print(summary)
+
+def execute_workstream(workstream, automation, engagement_dir):
+    """Execute specific workstream with automation"""
+    
+    console.print(f"[bold cyan]🚀 Executing: {workstream}[/bold cyan]")
+    
+    with Progress() as progress:
+        task = progress.add_task(f"Processing {workstream}", total=100)
+        
+        # Simulate automated execution
+        import time
+        for i in range(100):
+            time.sleep(0.02)  # Simulate work
+            progress.update(task, advance=1)
+    
+    # Mock results
+    results = {
+        "access_controls": {
+            "tests_executed": 847,
+            "pass_rate": 95,
+            "findings": 3,
+            "risk_rating": "Medium"
+        }
+    }
+    
+    result = results.get(workstream.lower().replace(" ", "_"), {
+        "tests_executed": 234,
+        "pass_rate": 92,
+        "findings": 2,
+        "risk_rating": "Low"
+    })
+    
+    console.print(Panel(f"""
+[bold green]✅ Workstream Complete: {workstream}[/bold green]
+
+[bold cyan]Results Summary:[/bold cyan]
+• Tests Executed: {result['tests_executed']} (automated)
+• Pass Rate: {result['pass_rate']}%
+• Findings: {result['findings']} identified
+• Risk Rating: {result['risk_rating']}
+
+[bold]Evidence Location:[/bold] {engagement_dir}/evidence/{workstream.lower().replace(' ', '_')}/
+[bold]Next Step:[/bold] [bold]openaudit report[/bold] to generate stakeholder update
+    """, title="🎯 Execution Results"))
+
+def execute_all_workstreams(work_program, automation, engagement_dir):
+    """Execute all workstreams in the work program"""
+    
+    console.print("[bold cyan]🚀 Executing Full Work Program[/bold cyan]")
+    
+    for ws in work_program["workstreams"]:
+        execute_workstream(ws["name"], automation, engagement_dir)
+        console.print()  # Add spacing
+
+def compile_engagement_data(engagement_dir):
+    """Compile all engagement data for reporting"""
+    
+    # Mock compiled data
+    return {
+        "progress": 67,
+        "findings_count": 8,
+        "high_priority_findings": 3,
+        "value_created": 2300000,
+        "stakeholder_satisfaction": 4.2,
+        "automation_benefits": {
+            "time_saved": 60,
+            "tests_automated": 1500,
+            "manual_effort_reduced": "40 hours"
+        }
+    }
+
+def create_stakeholder_report(data, stakeholder, format):
+    """Create stakeholder-specific report"""
+    
+    # Mock HTML report generation
+    html_template = f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>OpenAudit Progress Report - {stakeholder.title()}</title>
+        <style>
+            body {{ font-family: Arial, sans-serif; margin: 40px; }}
+            .metric {{ background: #f0f8ff; padding: 20px; margin: 10px 0; border-radius: 8px; }}
+            .finding {{ background: #fff5f5; padding: 15px; margin: 10px 0; border-left: 4px solid #ff6b6b; }}
+            .value {{ background: #f0fff4; padding: 15px; margin: 10px 0; border-left: 4px solid #51cf66; }}
+        </style>
+    </head>
+    <body>
+        <h1>🎯 OpenAudit Progress Dashboard</h1>
+        <p><strong>Generated:</strong> {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>
+        
+        <div class="metric">
+            <h2>📊 Key Metrics</h2>
+            <ul>
+                <li><strong>Progress:</strong> {data['progress']}% complete</li>
+                <li><strong>Findings:</strong> {data['findings_count']} identified ({data['high_priority_findings']} high priority)</li>
+                <li><strong>Value Created:</strong> ${data['value_created']:,} risk exposure identified</li>
+                <li><strong>Satisfaction:</strong> {data['stakeholder_satisfaction']}/5.0</li>
+            </ul>
+        </div>
+        
+        <div class="value">
+            <h2>🚀 Automation Benefits</h2>
+            <ul>
+                <li><strong>Time Savings:</strong> {data['automation_benefits']['time_saved']}% vs. traditional approach</li>
+                <li><strong>Tests Automated:</strong> {data['automation_benefits']['tests_automated']} procedures</li>
+                <li><strong>Manual Effort Reduced:</strong> {data['automation_benefits']['manual_effort_reduced']}</li>
+            </ul>
+        </div>
+        
+        <div class="finding">
+            <h2>⚠️ High Priority Findings</h2>
+            <p><strong>Critical Data Encryption Gap:</strong> Customer PII stored without encryption in legacy database</p>
+            <p><strong>Privileged Access Control:</strong> 15 users with unnecessary administrative privileges</p>
+            <p><strong>Vendor Risk Management:</strong> 8 critical vendors without security assessments</p>
+        </div>
+    </body>
+    </html>
+    """
+    
+    return html_template
+
+def main():
+    parser = argparse.ArgumentParser(description="OpenAudit Engagement Automation")
+    subparsers = parser.add_subparsers(dest="command", help="Available commands")
+    
+    # Init command
+    init_parser = subparsers.add_parser("init", help="Initialize new engagement")
+    init_parser.add_argument("name", help="Engagement name")
+    init_parser.add_argument("--entity", required=True, help="Entity being audited")
+    init_parser.add_argument("--framework", help="Audit framework (soc2, sox, iso27001)")
+    
+    # Profile command
+    profile_parser = subparsers.add_parser("profile", help="Configure organizational profile")
+    profile_parser.add_argument("--industry", help="Industry type (saas, healthcare, financial)")
+    profile_parser.add_argument("--size", help="Organization size (startup, medium, enterprise)")
+    profile_parser.add_argument("--complexity", help="Complexity level (low, medium, high)")
+    
+    # Plan command
+    plan_parser = subparsers.add_parser("plan", help="Generate work program")
+    plan_parser.add_argument("--timeline", type=int, default=90, help="Timeline in days")
+    plan_parser.add_argument("--automation", default="medium", help="Automation level")
+    
+    # Execute command
+    exec_parser = subparsers.add_parser("execute", help="Execute engagement")
+    exec_parser.add_argument("--workstream", help="Specific workstream to execute")
+    exec_parser.add_argument("--automation", default="medium", help="Automation level")
+    
+    # Report command
+    report_parser = subparsers.add_parser("report", help="Generate stakeholder report")
+    report_parser.add_argument("--stakeholder", default="management", help="Target stakeholder")
+    report_parser.add_argument("--format", default="dashboard", help="Report format")
+    
+    # Status command
+    status_parser = subparsers.add_parser("status", help="Show engagement status")
+    
+    args = parser.parse_args()
+    
+    if args.command == "init":
+        init_engagement(args.name, args.entity, args.framework)
+    elif args.command == "profile":
+        profile_organization(args.industry, args.size, args.complexity)
+    elif args.command == "plan":
+        generate_work_program(args.timeline, args.automation)
+    elif args.command == "execute":
+        execute_engagement(args.workstream, args.automation)
+    elif args.command == "report":
+        generate_stakeholder_report(args.stakeholder, args.format)
+    elif args.command == "status":
+        show_engagement_status()
+    else:
+        parser.print_help()
+
+if __name__ == "__main__":
+    main()
