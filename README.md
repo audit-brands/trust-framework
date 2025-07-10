@@ -6,6 +6,22 @@
 
 Trust is a modular, open-source framework for building trust through modern assurance. It combines control design, system feedback, and stakeholder outcomes that go beyond compliance. This repository contains the core modules, patterns, tools, and the principles behind Trust — a community-driven system for modern assurance and control design. This framework is created by assurance practitioners for audit practitioners.
 
+---
+
+## Putting the Framework into Practice: The `trust-cli` Engine
+
+While the Trust Framework provides the core principles and modular content for a new approach to assurance, the **`trust-cli`** is its official command-line engine. It's the reference implementation that brings the framework to life.
+
+The `trust-cli` is a privacy-focused, local-first AI assistant designed to help practitioners:
+*   **Scaffold** new audit engagements based on framework standards.
+*   **Integrate** and customize `patterns` and `modules` for specific tasks.
+*   **Automate** evidence collection and analysis.
+*   **Generate** modern, data-driven reports.
+
+To move from theory to practice, we highly recommend you explore the **[trust-cli repository](https://github.com/audit-brands/trust-cli)**.
+
+---
+
 ## 🔧 What's Inside
 
 **Trust Framework**: Principles, modules, and patterns for trust-driven assurance
@@ -54,7 +70,7 @@ Trust is a modular, open-source framework for building trust through modern assu
 
 We encourage forks, adaptations, and creative reuse of our resources—just give credit where it's due:
 
-> "Built on the Trust open framework"  
+> "Built on the Trust open framework"
 > [https://github.com/audit-brands/trust-framework](https://github.com/audit-brands/trust-framework)
 
 If you're building something exciting using Trust, we'd love to hear about it!
