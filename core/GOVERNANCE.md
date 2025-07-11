@@ -1,46 +1,53 @@
-# Trust Governance
+# The Open Assurance Collective Governance Model
 
-**Version 1.0**
+**Version:** 1.0
 
-Trust is an open framework for building trust through assurance. It is developed and maintained by a growing community of contributors who believe that governance, risk, and control systems should be transparent, adaptive, and stakeholder-focused. Learn about our open contribution model, roles (steward, contributors, maintainers), and decision-making process.
+---
 
-## Guiding Principles
+## 🎯 Objective
 
-- **Open by Default**: All decisions, contributions, and discussions are public and forkable.
-- **Community-Driven**: No single entity owns Trust; leadership emerges through contribution.
-- **Mission-First**: We prioritize outcomes that increase trust, insight, and impact—not bureaucracy.
-- **Respectful Participation**: Contributors are expected to engage constructively and transparently.
+This document outlines the core governance decisions for The Open Assurance Collective, covering our legal and financial structure, as well as our open-source licensing. These decisions are designed to ensure the long-term sustainability, independence, and integrity of the project.
 
-## Contribution Structure
+--- 
 
-- **Maintainers**: Trusted contributors who review pull requests, manage releases, and uphold community norms.
-- **Contributors**: Anyone who submits an issue, pull request, pattern, or discussion item.
-- **Steward**: The original founder (currently Jamie Ontiveros) acts as interim steward for roadmap direction and brand protection.
+## ⚖️ Open Source Licensing
 
-All contributions are welcome. For significant changes, open an issue first to start a discussion.
+### The Decision: Apache 2.0 License
 
-## Decision-Making
+All content and code within the `trust-framework` and its associated projects (like the `trust-cli`) are licensed under the **Apache License, Version 2.0**. The full text of the license is available in the [LICENSE](../LICENSE) file in the root of this repository.
 
-- **Consensus Seeking**: We aim for consensus among maintainers for major changes.
-- **Pull Requests**: Accepted based on clarity, value alignment, and practical utility.
-- **Open and Extensible**: You are encouraged to fork, remix, or build on Trust for your own use case—with attribution.
+### The Reasoning
 
-## Use of the Name “Trust”
+Our primary goal is to maximize the adoption and impact of the framework. We want to become the de facto standard for the assurance profession, which requires that our work be accessible and usable by the widest possible audience, including commercial companies, consultants, and other open-source projects.
 
-To preserve the integrity and vision of the project:
+The Apache 2.0 license was chosen for several key reasons:
 
-- You may **not** use the name “Trust” to describe a closed-source fork or proprietary variant without written permission.
-- Derivative projects must clearly distinguish themselves unless they contribute back to the core.
-- You **can** use the name to reference or cite the framework in educational, community, or academic work with attribution.
+*   **It is Permissive:** It allows anyone to use, modify, and distribute our work for any purpose, commercial or otherwise, with very few restrictions. This encourages adoption.
+*   **It is Business-Friendly:** It is a well-understood and trusted license that is widely accepted by corporate legal departments.
+*   **It Includes an Explicit Patent Grant:** This is a critical feature that protects both our contributors and our users from patent litigation. It ensures that the framework is safe for everyone to use and build upon.
 
-The name and logo may be trademarked in the future to prevent misuse.
+--- 
 
-## How to Become a Maintainer
+## 💰 Financial Management & Fiscal Host Analysis
 
-Contributors who demonstrate sustained, thoughtful participation may be invited to become maintainers.
+To accept and manage funds from our sponsorship and membership programs in a transparent and legally compliant manner, we will operate under the umbrella of a **fiscal host**. A fiscal host is an existing non-profit organization that provides financial and legal oversight for open-source projects, allowing us to focus on our mission.
 
-## Changes to Governance
+Below is a comparative analysis of the top three fiscal hosts for a project like ours.
 
-This document may evolve. Proposed changes should be submitted via pull request and discussed in a public issue.
+| Aspect | Open Source Collective (OSC) | Software Freedom Conservancy (SFC) | NumFOCUS | 
+| :--- | :--- | :--- | :--- |
+| **Primary Focus** | Broadly supports a wide range of open-source projects, with a strong focus on sustainable community funding. | Focuses on projects that align with its mission of promoting and defending Free and Open Source Software (FOSS), often with a strong copyleft orientation. | Focuses specifically on open-source projects in the scientific computing and data science ecosystem (e.g., NumPy, Pandas, Jupyter). |
+| **Model** | Acts as a 501(c)(6) non-profit. Provides a platform (Open Collective) for transparent budget management. | Acts as a 501(c)(3) public charity. Provides more hands-on legal and administrative support. | Acts as a 501(c)(3) public charity. Provides a strong community and network within the data science world. |
+| **Fees** | **10%** of incoming funds. | **10%** of incoming funds. | **15%** of incoming funds. |
+| **Pros** | - **Fast & Easy Setup:** The application process is straightforward and designed for rapid onboarding.<br>- **Transparent by Default:** All budgets and transactions are public on the Open Collective platform.<br>- **Flexible:** Supports a very wide range of project types. | - **Strong Legal Support:** Provides robust legal services, including trademark protection and license enforcement.<br>- **High Credibility:** Has a very strong reputation for defending FOSS principles. | - **Strong Community:** Provides access to a network of high-profile data science projects and leaders.<br>- **Prestige:** Membership is a strong signal of quality and importance in the scientific computing world. |
+| **Cons** | - Less hands-on legal support compared to SFC.<br>- As a 501(c)(6), donations are not tax-deductible for donors in the US. | - The application process is more rigorous and selective.<br>- Has a stronger preference for copyleft licenses, which may not align with our permissive approach. | - Our project is not a perfect fit for their scientific computing focus.<br>- The highest fees of the three. |
 
-**Let’s build trust by building together. Audit forward.**
+### The Recommendation: Open Source Collective (OSC)
+
+For The Open Assurance Collective, the **Open Source Collective is the clear and recommended choice.**
+
+*   **Alignment:** Their model of transparent, community-focused funding is perfectly aligned with our own philosophy.
+*   **Speed & Simplicity:** It allows us to start accepting funds quickly and with minimal administrative overhead.
+*   **Flexibility:** Their broad focus is a good fit for our unique position at the intersection of technology, risk, and professional services.
+
+While the lack of tax-deductibility for donors is a minor drawback, it is outweighed by the significant advantages in speed, transparency, and alignment with our project's goals. We will therefore proceed with applying for fiscal hosting with the Open Source Collective.

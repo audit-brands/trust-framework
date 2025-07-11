@@ -1,6 +1,6 @@
-# How to Contribute to the OpenAudit Framework
+# How to Contribute to The Open Assurance Collective
 
-First of all, thank you for your interest in contributing! The OpenAudit framework is a community-driven project, and your contributions are essential to its success. Whether you are submitting a new engagement pattern, proposing a core module, or fixing a typo, your help is greatly appreciated.
+First of all, thank you for your interest in contributing! The Open Assurance Collective is a community-driven project, and your contributions are essential to its success. Whether you are submitting a new engagement pattern, proposing a core module, or fixing a typo, your help is greatly appreciated.
 
 This document provides guidelines for contributing to the `trust-framework` repository.
 
@@ -62,7 +62,7 @@ In your pull request description, please include:
 
 Once you submit a pull request, one of the project maintainers will review your contribution. The review will focus on:
 
-*   **Alignment with the OpenAudit philosophy.**
+*   **Alignment with our philosophy.**
 *   **Clarity and quality of the writing.**
 *   **Adherence to the required structure and metadata schema.**
 
@@ -75,4 +75,4 @@ We believe in recognizing our contributors for their valuable work. Merged contr
 *   **Current Process:** In our current phase, recognition is granted based on a qualitative review of your merged pull requests by the project maintainers. This requires a GitHub account.
 *   **Future Vision:** We are building a dedicated Q&A platform that will allow for broader community participation and a more automated, vote-based recognition system. Participation in this future platform will not require a GitHub account.
 
-Thank you again for your interest in contributing to the OpenAudit framework!
+Thank you again for your interest in contributing to The Open Assurance Collective!

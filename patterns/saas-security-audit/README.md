@@ -55,3 +55,17 @@ This pattern is composed of a series of work programs and checklists for each of
 *   **[work-program-domain-data-security-privacy.md](work-program-domain-data-security-privacy.md):** A work program for auditing data security controls and privacy practices.
 *   **[work-program-domain-iam.md](work-program-domain-iam.md):** A work program for auditing identity and access management controls.
 *   **[work-program-domain-incident-response.md](work-program-domain-incident-response.md):** A work program for auditing incident response and business continuity capabilities.
+
+---
+
+## 🧠 Applying the Control Maturity Model
+
+In addition to the detailed work programs, practitioners should use the **[Control Maturity & Design Assessment](../../core/control-maturity-and-design-assessment.md)** tool from our core library to evaluate the key controls within this domain.
+
+For each significant control identified during the audit (e.g., the process for vulnerability scanning, the user access review process), complete the worksheet to:
+
+1.  **Assess the current maturity level** of the control.
+2.  **Identify key gaps and risks** in its current design.
+3.  **Define a clear path for improvement** toward a more automated and adaptive state.
+
+This provides a powerful, forward-looking perspective that moves beyond simple compliance checking and helps to drive real improvement in the organization's security posture.
