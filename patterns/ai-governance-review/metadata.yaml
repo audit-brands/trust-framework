@@ -1,0 +1,17 @@
+name: "AI Governance Review"
+version: "1.0"
+author: "OpenAudit Community"
+description: "A pattern for reviewing an organization's governance over the development and deployment of AI/ML models."
+tags:
+  - "ai"
+  - "machine-learning"
+  - "governance"
+  - "ethics"
+  - "emerging-tech"
+associated_frameworks:
+  - "NIST AI Risk Management Framework"
+  - "ISO/IEC 23894:2023"
+dependencies:
+  modules:
+    - "risk-intelligence"
+    - "stakeholder-centric-assurance"

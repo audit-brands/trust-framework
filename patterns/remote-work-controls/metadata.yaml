@@ -1,0 +1,15 @@
+name: "Remote Work Controls Review"
+version: "1.0"
+author: "OpenAudit Community"
+description: "A pattern for reviewing the risks and controls associated with a remote or hybrid workforce."
+tags:
+  - "it-operations"
+  - "hr"
+  - "security"
+  - "remote-work"
+associated_frameworks:
+  - "NIST SP 800-46"
+  - "CIS Controls"
+dependencies:
+  modules:
+    - "stakeholder-centric-assurance"

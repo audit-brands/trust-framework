@@ -1,0 +1,18 @@
+name: "SaaS Security Audit"
+version: "1.0"
+author: "OpenAudit Community"
+description: "A comprehensive pattern for auditing the security of a SaaS application and its cloud infrastructure."
+tags:
+  - "security"
+  - "cloud"
+  - "saas"
+  - "technology"
+associated_frameworks:
+  - "SOC 2"
+  - "ISO 27001"
+  - "NIST Cybersecurity Framework"
+  - "CIS Benchmarks"
+dependencies:
+  modules:
+    - "risk-intelligence"
+    - "stakeholder-centric-assurance"

@@ -1,6 +1,6 @@
 # Trust Brand Usage Policy
 
-**Version 0.1 – Draft**
+**Version 1.0**
 
 The Trust name, logo, and associated assets are intended to represent the values of transparency, open collaboration, and trust.
 
@@ -26,6 +26,6 @@ How to use the Trust name and logo appropriately. What requires permission and w
 ## Questions?
 
 Contact: Jamie Ontiveros  
-Email: [add your contact email]
+Email: contact@openaudit.org
 
 Trust is open. So is Trust.

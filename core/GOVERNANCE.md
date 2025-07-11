@@ -1,6 +1,6 @@
 # Trust Governance
 
-**Version 0.1 — Draft for Community Review**
+**Version 1.0**
 
 Trust is an open framework for building trust through assurance. It is developed and maintained by a growing community of contributors who believe that governance, risk, and control systems should be transparent, adaptive, and stakeholder-focused. Learn about our open contribution model, roles (steward, contributors, maintainers), and decision-making process.
 
@@ -23,7 +23,7 @@ All contributions are welcome. For significant changes, open an issue first to s
 
 - **Consensus Seeking**: We aim for consensus among maintainers for major changes.
 - **Pull Requests**: Accepted based on clarity, value alignment, and practical utility.
-- **Forking is Fair Game**: You are encouraged to fork, remix, or build on Trust for your own use case—with attribution.
+- **Open and Extensible**: You are encouraged to fork, remix, or build on Trust for your own use case—with attribution.
 
 ## Use of the Name “Trust”
 

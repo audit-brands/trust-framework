@@ -1,7 +1,7 @@
 # OpenAudit Core Principles
 ## The Foundation of Modern Internal Auditing
 
-*Replacing the IIA's International Professional Practices Framework (IPPF) with principles designed for the modern era*
+*A modern alternative to traditional frameworks, designed for today's risk landscape*
 
 ---
 
@@ -303,6 +303,6 @@ These principles work together as an integrated system:
 
 ---
 
-*These principles replace the IIA's IPPF with a framework designed for modern organizational realities and stakeholder expectations. They emphasize outcomes over compliance, evidence over opinion, and continuous improvement over static frameworks.*
+*These principles provide a modern alternative to traditional frameworks, designed for modern organizational realities and stakeholder expectations. They emphasize outcomes over compliance, evidence over opinion, and continuous improvement over static frameworks.*
 
 **The future of internal auditing starts with adopting these principles today.**
